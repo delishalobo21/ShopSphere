@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere | Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a href="index.html" class="logo">
+                Shop<span>Sphere</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html" class="active">
+    Cart (<span id="cartCount">0</span>)
+</a>
+
+            </nav>
+
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Cart -->
+
+    <main>
+
+        <section class="cart-section">
+
+            <div class="container">
+
+
+                <!-- Cart Heading -->
+
+                <div class="cart-header">
+
+                    <p>YOUR SHOPPING CART</p>
+
+                    <h1>
+                        Shopping Cart
+                    </h1>
+
+                </div>
+
+
+
+                <!-- Cart Content -->
+
+                <div class="cart-container">
+
+
+                    <!-- Cart Items -->
+
+                    <div
+                        class="cart-items"
+                        id="cartItems"
+                    >
+
+                        <!-- Cart products will appear here -->
+
+                    </div>
+
+
+
+                    <!-- Cart Summary -->
+
+                    <div class="cart-summary">
+
+                        <h2>
+                            Order Summary
+                        </h2>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong id="cartSubtotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Shipping
+                            </span>
+
+                            <strong id="cartShipping">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="cartTotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <a href="checkout.html" class="checkout-btn">
+    Proceed to Checkout
+</a>
+
+
+                        <a
+                            href="products.html"
+                            class="continue-shopping"
+                        >
+                            ← Continue Shopping
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Shop<span>Sphere</span>
+                </h3>
+
+                <p>
+                    Shop smart. Live better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShopSphere. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+
+    <script src="js/cart.js"></script>
+
+
+</body>
+
+</html>

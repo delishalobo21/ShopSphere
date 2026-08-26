@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere | Product Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         NAVIGATION
+    ================================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a href="index.html" class="logo">
+                Shop<span>Sphere</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html" class="active">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart (<span id="cartCount">0</span>)
+                </a>
+
+            </nav>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         PRODUCT DETAILS
+    ================================== -->
+
+    <main>
+
+        <section class="product-details-section">
+
+            <div class="container product-details">
+
+
+                <!-- Product Image -->
+
+                <div class="details-image">
+
+                    <div
+                        class="details-image-box"
+                        id="detailsImage"
+                    >
+                        🛍️
+                    </div>
+
+                </div>
+
+
+
+                <!-- Product Information -->
+
+                <div class="details-info">
+
+
+                    <!-- Category -->
+
+                    <span
+                        class="details-category"
+                        id="detailsCategory"
+                    >
+                        Loading...
+                    </span>
+
+
+                    <!-- Product Name -->
+
+                    <h1 id="detailsName">
+                        Loading...
+                    </h1>
+
+
+                    <!-- Rating -->
+
+                    <div
+                        class="details-rating"
+                        id="detailsRating"
+                    >
+                        ⭐⭐⭐⭐⭐
+                        <span>(0 Reviews)</span>
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <p
+                        class="details-price"
+                        id="detailsPrice"
+                    >
+                        ₹0
+                    </p>
+
+
+                    <!-- Description -->
+
+                    <p
+                        class="details-description"
+                        id="detailsDescription"
+                    >
+                        Loading product description...
+                    </p>
+
+
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-section">
+
+                        <label for="quantity">
+                            Quantity
+                        </label>
+
+
+                        <div class="quantity-control">
+
+                            <button
+                                id="decreaseBtn"
+                                type="button"
+                            >
+                                −
+                            </button>
+
+
+                            <input
+                                type="number"
+                                id="quantity"
+                                value="1"
+                                min="1"
+                            >
+
+
+                            <button
+                                id="increaseBtn"
+                                type="button"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Buttons -->
+
+                    <div class="details-buttons">
+
+                        <button
+                            class="add-cart-btn"
+                            id="addCartBtn"
+                            type="button"
+                        >
+                            🛒 Add to Cart
+                        </button>
+
+
+                        <a
+                            href="products.html"
+                            class="back-products-btn"
+                        >
+                            ← Back to Products
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-brand">
+
+                <h3>
+                    Shop<span>Sphere</span>
+                </h3>
+
+                <p>
+                    Shop smart. Live better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShopSphere. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/product-details.js"></script>
+
+    <script src="js/cart.js"></script>
+
+
+</body>
+
+</html>

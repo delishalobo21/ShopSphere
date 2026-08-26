@@ -1,0 +1,317 @@
+/* ================================
+   CHECKOUT PAGE
+================================ */
+
+.checkout-section {
+    background: #f7f7fc;
+    padding: 70px 0;
+    min-height: 650px;
+}
+
+
+/* ================================
+   CHECKOUT HEADER
+================================ */
+
+.checkout-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.checkout-header p {
+    color: #675cff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.checkout-header h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #171717;
+}
+
+
+/* ================================
+   CHECKOUT LAYOUT
+================================ */
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* ================================
+   CHECKOUT CARD
+================================ */
+
+.checkout-card {
+    background: #ffffff;
+    border: 1px solid #e5e5ef;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.checkout-card h2 {
+    font-size: 22px;
+    margin: 0 0 25px;
+    color: #171717;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #dcdce5;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #675cff;
+    box-shadow: 0 0 0 3px rgba(103, 92, 255, 0.1);
+}
+
+
+/* ================================
+   TWO COLUMN FORM
+================================ */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* ================================
+   PAYMENT
+================================ */
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #e1e1e8;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.payment-option:hover {
+    border-color: #675cff;
+    background: #f8f7ff;
+}
+
+.payment-option input {
+    accent-color: #675cff;
+}
+
+
+/* ================================
+   ORDER SUMMARY
+================================ */
+
+.checkout-summary {
+    position: sticky;
+    top: 100px;
+}
+
+.checkout-items {
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eeeeef;
+}
+
+.checkout-item:last-child {
+    border-bottom: none;
+}
+
+.checkout-item-name {
+    font-weight: 600;
+}
+
+.checkout-item-quantity {
+    color: #777;
+    font-size: 14px;
+}
+
+.checkout-item-price {
+    font-weight: 600;
+}
+
+
+/* ================================
+   SUMMARY ROWS
+================================ */
+
+.checkout-summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    color: #555;
+}
+
+.checkout-summary-row strong {
+    color: #171717;
+}
+
+.checkout-divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 20px 0;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.checkout-total span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.checkout-total strong {
+    font-size: 24px;
+    color: #171717;
+}
+
+
+/* ================================
+   PLACE ORDER BUTTON
+================================ */
+
+.place-order-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #675cff;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.place-order-btn:hover {
+    background: #574bea;
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   BACK TO CART
+================================ */
+
+.back-cart {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #675cff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-cart:hover {
+    text-decoration: underline;
+}
+
+
+/* ================================
+   NO ITEMS
+================================ */
+
+.no-checkout-items {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .checkout-section {
+        padding: 45px 0;
+    }
+
+    .checkout-header h1 {
+        font-size: 32px;
+    }
+
+    .checkout-card {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}

@@ -1,0 +1,345 @@
+/* =================================
+   ABOUT HERO
+================================= */
+
+.about-hero {
+    background: #f7f7fc;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-label,
+.section-label {
+    color: #665cff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    margin: 0;
+    color: #171717;
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.about-hero h1 span {
+    color: #665cff;
+    display: block;
+}
+
+.about-intro {
+    max-width: 650px;
+    margin: 25px auto 0;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+    padding: 90px 20px;
+    background: #ffffff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-content h2 {
+    margin: 0 0 25px;
+    color: #171717;
+    font-size: 38px;
+}
+
+.about-content p:not(.section-label) {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* =================================
+   ABOUT HIGHLIGHT
+================================= */
+
+.about-highlight {
+    padding: 45px 35px;
+    border-radius: 20px;
+    background: #f7f7fc;
+    border: 1px solid #e5e5ef;
+    text-align: center;
+}
+
+.highlight-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #ffffff;
+
+    font-size: 38px;
+}
+
+.about-highlight h3 {
+    margin: 0 0 12px;
+    color: #171717;
+    font-size: 27px;
+}
+
+.about-highlight p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   MISSION SECTION
+================================= */
+
+.mission-section {
+    padding: 90px 20px;
+    background: #f7f7fc;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 15px;
+    color: #171717;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.section-heading > p:last-child {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   MISSION CARDS
+================================= */
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+    padding: 35px 28px;
+    background: #ffffff;
+    border: 1px solid #e5e5ef;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.mission-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.mission-card h3 {
+    margin: 0 0 12px;
+    color: #171717;
+    font-size: 21px;
+}
+
+.mission-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   WHY SHOPSPHERE
+================================= */
+
+.why-section {
+    padding: 90px 20px;
+    background: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 30px 22px;
+    border: 1px solid #e5e5ef;
+    border-radius: 15px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    margin: 0 0 12px;
+    color: #171717;
+    font-size: 19px;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   CTA
+================================= */
+
+.about-cta {
+    padding: 80px 20px;
+    background: #665cff;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 38px;
+}
+
+.cta-content p {
+    margin: 0 0 30px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+}
+
+.about-cta-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #665cff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.about-cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-highlight {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .about-hero {
+        padding: 65px 20px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-intro {
+        font-size: 16px;
+    }
+
+    .about-section,
+    .mission-section,
+    .why-section {
+        padding: 65px 20px;
+    }
+
+    .about-content h2,
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+}

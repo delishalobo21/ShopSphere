@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere | Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a href="index.html" class="logo">
+                Shop<span>Sphere</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="about.html">About</a>
+                <a href="cart.html">
+    Cart (<span id="cartCount">0</span>)
+</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Products Page -->
+    <main>
+
+        <!-- Page Header -->
+        <section class="products-header">
+
+            <div class="container">
+
+                <p>OUR COLLECTION</p>
+
+                <h1>Explore Products</h1>
+
+                <p class="products-description">
+                    Find the perfect products from our collection.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Products Section -->
+        <section class="products-section">
+
+            <div class="container">
+
+                <!-- Search and Filter -->
+                <div class="products-controls">
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search products..."
+                        >
+
+                        <button id="searchBtn">
+                            🔍
+                        </button>
+
+                    </div>
+
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="fashion">
+                            Fashion
+                        </option>
+
+                        <option value="electronics">
+                            Electronics
+                        </option>
+
+                        <option value="home">
+                            Home
+                        </option>
+
+                        <option value="beauty">
+                            Beauty
+                        </option>
+
+                    </select>
+
+
+                    <select id="sortProducts">
+
+                        <option value="default">
+                            Sort Products
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="name">
+                            Name: A-Z
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Product Grid -->
+                <div class="products-grid" id="productsGrid">
+
+                    <!-- Product 1 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            👟
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Fashion
+                            </span>
+
+                            <h3>Classic Sneakers</h3>
+
+                            <p>
+                                Comfortable everyday sneakers.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹1,999</strong>
+
+                                <a href="product-details.html?id=1">
+    View
+</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            🎧
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Electronics
+                            </span>
+
+                            <h3>Wireless Headphones</h3>
+
+                            <p>
+                                Enjoy clear and immersive sound.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹2,499</strong>
+
+                                <a href="product-details.html?id=2">
+    View
+</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            ⌚
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Electronics
+                            </span>
+
+                            <h3>Smart Watch</h3>
+
+                            <p>
+                                Stay connected wherever you go.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹3,499</strong>
+
+                                <a href="product-details.html?id=3">
+    View
+</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            👕
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Fashion
+                            </span>
+
+                            <h3>Casual T-Shirt</h3>
+
+                            <p>
+                                Soft and comfortable cotton t-shirt.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹799</strong>
+
+                               <a href="product-details.html?id=4">
+    View
+</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            💡
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Home
+                            </span>
+
+                            <h3>Modern Table Lamp</h3>
+
+                            <p>
+                                Add a warm touch to your room.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹1,299</strong>
+
+                                <a href="product-details.html?id=5">
+    View
+</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 6 -->
+                    <div class="shop-product-card">
+
+                        <div class="shop-product-image">
+                            🧴
+                        </div>
+
+                        <div class="shop-product-info">
+
+                            <span class="shop-product-category">
+                                Beauty
+                            </span>
+
+                            <h3>Beauty Care Set</h3>
+
+                            <p>
+                                Everyday essentials for your routine.
+                            </p>
+
+                            <div class="shop-product-bottom">
+
+                                <strong>₹999</strong>
+
+                                <a href="product-details.html?id=6">
+    View
+</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Shop<span>Sphere</span>
+                </h3>
+
+                <p>
+                    Shop smart. Live better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShopSphere. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>

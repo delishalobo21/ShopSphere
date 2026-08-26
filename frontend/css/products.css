@@ -1,0 +1,401 @@
+/* ================================
+   PRODUCTS PAGE HEADER
+================================ */
+
+.products-header {
+    padding: 70px 0 45px;
+    background: #f7f8fc;
+    text-align: center;
+}
+
+.products-header > .container > p:first-child {
+    color: #6c63ff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.products-header h1 {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.products-description {
+    color: #666666;
+    font-size: 17px;
+}
+
+
+/* ================================
+   PRODUCTS SECTION
+================================ */
+
+.products-section {
+    padding: 60px 0 90px;
+    background: #ffffff;
+}
+
+
+/* ================================
+   SEARCH & FILTERS
+================================ */
+
+.products-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.search-box {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 13px 16px;
+    border: 1px solid #dddddd;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #6c63ff;
+}
+
+.search-box button {
+    width: 50px;
+    border: none;
+    background: #6c63ff;
+    color: #ffffff;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.products-controls select {
+    padding: 13px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.products-controls select:focus {
+    border-color: #6c63ff;
+}
+
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* ================================
+   PRODUCT CARD
+================================ */
+
+.shop-product-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.shop-product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================================
+   PRODUCT IMAGE
+================================ */
+
+.shop-product-image {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0efff;
+    font-size: 90px;
+}
+
+
+/* ================================
+   PRODUCT INFORMATION
+================================ */
+
+.shop-product-info {
+    padding: 22px;
+}
+
+.shop-product-category {
+    display: inline-block;
+    color: #6c63ff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.shop-product-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.shop-product-info p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   PRICE & VIEW BUTTON
+================================ */
+
+.shop-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-product-bottom strong {
+    font-size: 20px;
+}
+
+.shop-product-bottom a {
+    padding: 9px 17px;
+    background: #6c63ff;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.shop-product-bottom a:hover {
+    
+    background: #554de0;
+}
+/* ================================
+   PRODUCT DETAILS PAGE
+================================ */
+
+.product-details-section {
+    padding: 70px 0;
+    background: #f7f7fc;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* Product Image */
+
+.details-image-box {
+    width: 100%;
+    height: 500px;
+    background: #eeeeff;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Product Information */
+
+.details-category {
+    display: inline-block;
+
+    color: #6c63ff;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.details-info h1 {
+    font-size: 46px;
+    margin: 0 0 15px;
+    color: #222;
+}
+
+
+/* Rating */
+
+.details-rating {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.details-rating span {
+    font-size: 15px;
+    color: #555;
+    margin-left: 8px;
+}
+
+
+/* Price */
+
+.details-price {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+
+    margin: 10px 0 20px;
+}
+
+
+/* Description */
+
+.details-description {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* Quantity */
+
+.quantity-section {
+    margin-bottom: 25px;
+}
+
+.quantity-section label {
+    display: block;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.quantity-control button {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    background: #f1f1f8;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity-control button:hover {
+    background: #6c63ff;
+    color: white;
+}
+
+.quantity-control input {
+    width: 55px;
+    height: 42px;
+
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+    text-align: center;
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+/* Buttons */
+
+.details-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-cart-btn {
+    padding: 14px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #6c63ff;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+    background: #574ee8;
+    transform: translateY(-2px);
+}
+
+
+.back-products-btn {
+    padding: 13px 20px;
+
+    border: 2px solid #6c63ff;
+    border-radius: 8px;
+
+    color: #6c63ff;
+    background: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.back-products-btn:hover {
+    background: #6c63ff;
+    color: white;
+}

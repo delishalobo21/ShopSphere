@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopSphere | Admin Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/admin.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         NAVIGATION
+    ================================== -->
+
+    <header class="navbar">
+
+        <div class="container navbar-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Shop<span>Sphere</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </nav>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         ADMIN DASHBOARD
+    ================================== -->
+
+    <main>
+
+        <section class="admin-section">
+
+            <div class="container">
+
+
+                <!-- Header -->
+
+                <div class="admin-header">
+
+                    <p>
+                        ADMIN PANEL
+                    </p>
+
+                    <h1>
+                        ShopSphere Dashboard
+                    </h1>
+
+                    <span>
+                        Manage your orders and store activity.
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================
+                     STATISTICS
+                ================================== -->
+
+                <div class="admin-stats">
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            📦
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Total Orders
+                            </p>
+
+                            <h2 id="totalOrders">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            💰
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Total Revenue
+                            </p>
+
+                            <h2 id="totalRevenue">
+                                ₹0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            ⏳
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Pending Orders
+                            </p>
+
+                            <h2 id="pendingOrders">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <div class="admin-stat-icon">
+                            👥
+                        </div>
+
+                        <div>
+
+                            <p>
+                                Customers
+                            </p>
+
+                            <h2 id="totalCustomers">
+                                0
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ORDERS
+                ================================== -->
+
+                <div class="admin-orders">
+
+                    <div class="admin-orders-header">
+
+                        <div>
+
+                            <h2>
+                                Recent Orders
+                            </h2>
+
+                            <p>
+                                View and manage customer orders.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            id="refreshOrdersBtn"
+                            class="refresh-orders-btn"
+                        >
+                            🔄 Refresh
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Orders Table -->
+
+                    <div class="orders-table-wrapper">
+
+                        <table class="orders-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Order ID
+                                    </th>
+
+                                    <th>
+                                        Customer
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Total
+                                    </th>
+
+                                    <th>
+                                        Payment
+                                    </th>
+
+                                    <th>
+                                        Date
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="ordersTableBody">
+
+                                <tr>
+
+                                    <td
+                                        colspan="8"
+                                        class="loading-orders"
+                                    >
+                                        Loading orders...
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =================================
+     ORDER DETAILS MODAL
+================================= -->
+
+<div class="order-modal" id="orderModal">
+
+    <div class="order-modal-content">
+
+        <div class="order-modal-header">
+
+            <div>
+                <p>ORDER DETAILS</p>
+                <h2 id="modalOrderId">
+                    Order #1
+                </h2>
+            </div>
+
+            <button
+                class="order-modal-close"
+                id="closeOrderModal"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Customer Information -->
+
+        <div class="modal-section">
+
+            <h3>Customer Information</h3>
+
+            <div class="modal-grid">
+
+                <div>
+                    <span>Name</span>
+                    <strong id="modalCustomerName">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Email</span>
+                    <strong id="modalCustomerEmail">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Phone</span>
+                    <strong id="modalCustomerPhone">
+                        -
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Shipping Address -->
+
+        <div class="modal-section">
+
+            <h3>Shipping Address</h3>
+
+            <div class="modal-address">
+
+                <p id="modalAddress">
+                    -
+                </p>
+
+                <p>
+                    <strong id="modalCity">
+                        -
+                    </strong>
+
+                    -
+
+                    <strong id="modalPincode">
+                        -
+                    </strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Payment -->
+
+        <div class="modal-section">
+
+            <h3>Payment Information</h3>
+
+            <div class="modal-payment">
+
+                <span>Payment Method</span>
+
+                <strong id="modalPayment">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- Order Summary -->
+
+        <div class="modal-section">
+
+            <h3>Order Summary</h3>
+
+            <div class="modal-summary">
+
+                <div>
+                    <span>Subtotal</span>
+                    <strong id="modalSubtotal">
+                        ₹0
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Shipping</span>
+                    <strong id="modalShipping">
+                        ₹0
+                    </strong>
+                </div>
+
+                <div class="modal-total">
+                    <span>Total</span>
+                    <strong id="modalTotal">
+                        ₹0
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-footer">
+
+            <button
+                class="modal-close-btn"
+                id="closeOrderModalBottom"
+            >
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Shop<span>Sphere</span>
+                </h3>
+
+                <p>
+                    Shop smart. Live better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShopSphere. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/admin.js"></script>
+
+
+</body>
+
+</html>

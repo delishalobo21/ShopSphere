@@ -49,7 +49,7 @@ async function loadOrders() {
 
         const response =
             await fetch(
-                "http://127.0.0.1:5000/api/orders"
+                "https://shopsphere-nmcj.onrender.com/api/orders"
             );
 
 
@@ -347,7 +347,7 @@ async function viewOrder(orderId) {
 
         const response =
             await fetch(
-                `http://127.0.0.1:5000/api/orders/${orderId}`
+                `https://shopsphere-nmcj.onrender.com/api/orders/${orderId}`
             );
 
 
@@ -557,7 +557,7 @@ async function updateOrderStatus(
 
         const response =
             await fetch(
-                `http://127.0.0.1:5000/api/orders/${orderId}/status`,
+                `https://shopsphere-nmcj.onrender.com/api/orders/${orderId}/status`,
                 {
                     method: "PUT",
 

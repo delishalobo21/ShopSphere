@@ -63,6 +63,7 @@
     margin: 0 0 25px;
     color: #171717;
     font-size: 38px;
+    line-height: 1.2;
 }
 
 .about-content p:not(.section-label) {
@@ -83,6 +84,12 @@
     background: #f7f7fc;
     border: 1px solid #e5e5ef;
     text-align: center;
+    transition: 0.3s ease;
+}
+
+.about-highlight:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
 }
 
 .highlight-icon {
@@ -157,12 +164,12 @@
     border: 1px solid #e5e5ef;
     border-radius: 16px;
     text-align: center;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .mission-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 .mission-icon {
@@ -203,12 +210,12 @@
     border: 1px solid #e5e5ef;
     border-radius: 15px;
     background: #ffffff;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
 }
 
 .feature-icon {
@@ -249,27 +256,30 @@
     margin: 0 0 15px;
     color: #ffffff;
     font-size: 38px;
+    line-height: 1.25;
 }
 
 .cta-content p {
     margin: 0 0 30px;
     color: rgba(255, 255, 255, 0.85);
     font-size: 17px;
+    line-height: 1.6;
 }
 
 .about-cta-btn {
     display: inline-block;
-    padding: 14px 25px;
+    padding: 14px 28px;
     border-radius: 8px;
     background: #ffffff;
     color: #665cff;
     font-weight: 700;
     text-decoration: none;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .about-cta-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -325,6 +335,18 @@
         grid-template-columns: 1fr;
     }
 
+    .about-highlight {
+        padding: 35px 25px;
+    }
+
+    .about-cta {
+        padding: 65px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
 }
 
 
@@ -338,8 +360,20 @@
         grid-template-columns: 1fr;
     }
 
-    .success-buttons {
-        flex-direction: column;
+    .about-intro {
+        font-size: 15px;
+    }
+
+    .about-content p:not(.section-label) {
+        font-size: 15px;
+    }
+
+    .mission-card {
+        padding: 30px 22px;
+    }
+
+    .feature-card {
+        padding: 25px 20px;
     }
 
 }
